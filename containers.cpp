@@ -58,8 +58,8 @@ public:
   bool insert(const T& x) {
     if (map_.count(x))
       return false;
-    vector_.push_back(x);
     map_[x] = vector_.size();
+    vector_.push_back(x);
     return true;
   }
 
