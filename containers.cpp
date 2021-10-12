@@ -43,7 +43,7 @@ public:
 
 template <typename T>
 class ExtendedSet {
-  std::unordered_map<int, T> map_;
+  std::unordered_map<T, int> map_;
   std::vector<T> vector_;
   std::random_device rd;
   std::mt19937 rng{ rd() };
